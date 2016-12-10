@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CALITEL E.S.P.</title>
+  <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+
+  <!-- navbar -->
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        CALITEL E.S.P
+      </a>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <div class="ui main text container">
+    <form class="ui form">
+
+      <h2 class="ui dividing header center aligned">Reporte</h2>
+
+      <div class="two fields">        
+        <div class="field">
+          <label>Fecha inicial</label>
+          <input type="date" name="bday">
+        </div>
+
+        <div class="field">
+          <label>Fecha final</label>
+          <input type="date" name="bday">
+        </div>
+      </div>
+
+      <div class="submit-form right">
+        <button class="ui button" id="generate">Generar</button>
+      </div>
+
+    </form>
+
+  <table class="ui very basic collapsing celled table">
+    <thead>
+      <tr>
+        <th>Solicitud</th>
+        <th>Usuario</th>
+        <th>Tipo de linea</th>
+        <th>fecha de asignación</th>
+        <th>Numero asignado</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+  </div>
+
+  <script src="assets/jquery-3.1.1.min.js"></script>
+  <script src="assets/semantic/semantic.min.js"></script>
+  <script src="assets/faker.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CALITEL E.S.P.</title>
+  <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+  <!-- navbar -->
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        CALITEL E.S.P
+      </a>
+    </div>
+  </div>
+
+
+  <!-- main content -->
+  <div class="ui main text container">
+    <form class="ui form">
+      
+      <h2 class="ui dividing header center aligned">Solicitar Linea</h2>
+     
+      <div class="two fields">
+        <div class="field">
+          <label>Identificación</label>
+          <select class="ui search dropdown">
+            <option value="">35685331</option>
+            <option value="AF">93456783</option>
+            <option value="AX">78945631</option>
+            <option value="AL">12345678</option>
+            <option value="AL">62345670</option>
+            <option value="AL">13456870</option>
+            <option value="AL">7656870</option>
+            <option value="AL">4532134</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Tipo de solicitud</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">Residencial</div>
+            <div class="menu">
+              <div class="item" data-value="1">Residencial</div>
+              <div class="item" data-value="2">Industrial</div>
+              <div class="item" data-value="3">Servicio de Taxi</div>
+              <div class="item" data-value="4">Hospitales</div>
+              <div class="item" data-value="5">Restaurantes</div>
+              <div class="item" data-value="6">Entidades Gubernamentales</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Nombre completo</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="shipping[first-name]" id="name" placeholder="Nombres">
+          </div>
+          <div class="field">
+            <input type="text" name="shipping[last-name]" id="last-name" placeholder="Apellidos">
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="three fields">
+          <div class="field">
+            <label>E-mail</label>
+            <input type="email" placeholder="andres.arias@openintl.com" id="email">
+          </div>
+          <div class="field">
+            <label>Celular</label>
+            <input type="text" placeholder="(315) 5896647" id="number">
+          </div>
+
+          <div class="field">
+            <label>Dirección</label>
+            <input type="text" placeholder="Calle 84 # 45 - 1" id="address">
+          </div>
+          
+        
+        </div>  
+      </div>
+
+      <div class="field">
+        <label>Comentarios</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="submit-form right">
+        <button class="ui button" id="submit">Solicitar</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- modal -->
+  <div class="ui small basic modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Solicitud creada exitosamente! - 13/12/2016
+    </div>
+    <div class="image content">
+      <div class="image">
+        <i class="archive icon"></i>
+      </div>
+      <div class="description">
+        <p id="message"></p>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui inverted buttons">
+        <div class="ui ok green basic inverted button">
+          <i class="checkmark icon"></i>
+          Ok
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+<!--  
+  <div class="ui bottom attached segment">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <a class="item">
+        <i class="file text icon"></i>
+        Solicitar
+      </a>
+      <a class="item">
+        <i class="pie chart icon"></i>
+        Informe
+      </a>
+      <a class="item">
+        <i class="newspaper icon"></i>
+        Solicitudes
+      </a>
+    </div>
+  </div>
+ -->
+
+
+
+  <script src="assets/jquery-3.1.1.min.js"></script>
+  <script src="assets/semantic/semantic.min.js"></script>
+  <script src="assets/faker.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+</html>
