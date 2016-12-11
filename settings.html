@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALITEL E.S.P.</title>
+    <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <div class="ui secondary pointing menu fixed">
+      <a class="item" id="register" href="index.html">
+        <i class="call icon"></i> Solicitar
+      </a>
+      <a class="item" href="report.html" id="report">
+        <i class="browser icon"></i> Informe de asignación
+      </a>
+      <a class="item active" href="settings.html">
+        <i class="settings icon"></i> Configuración
+      </a>
+    </div>
+
+    <section class="ui container admin content main">
+      <div class="ui grid">
+        <div class="four wide column">
+          <aside class="ui vertical menu">
+            <a class="item" href="#zone"> <i class="user icon"></i>Zona</a>
+            <a class="item" href="#barrio"><i class="lemon icon"></i>Barrio</a>
+            <a class="item" href="#central"><i class="book icon"></i>Central</a>
+            <a class="item" href="#numberType"><i class="lemon icon"></i>Tipos de Numero</a>
+            <a class="item" href="#clientType"><i class="bar chart icon"></i>Tipo de clientes</a>
+            <a class="item" href="#number"><i class="bar chart icon"></i>Numeros</a>
+            <a class="item" href="#client"><i class="bar chart icon"></i>Clientes</a>
+          </aside>
+        </div>
+        
+        <div class="twelve wide column">
+          <section class="content">
+
+            <h3> Zonas <i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="zone">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Nombre </th>
+                  <th> Descripción </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>1</td>
+                  <td>Sur</td>
+                  <td></td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Oriente</td>
+                  <td>Aenean pulvinar ut odio sit amet imperdiet.</td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                 <tr>
+                  <td>3</td>
+                  <td>Norte</td>
+                  <td></td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                 <tr>
+                  <td>4</td>
+                  <td>Oeste</td>
+                  <td></td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3> Barrios <i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="barrio">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Nombre </th>
+                  <th> Zona </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>154</td>
+                  <td>Ingenio</td>
+                  <td>Sur</td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td> 
+                </tr>
+                <tr>
+                  <td>155</td>
+                  <td>Ciudad Jardin</td>
+                  <td>Sur</td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td> 
+                </tr>
+                 <tr>
+                  <td>156</td>
+                  <td>Barrio Abajo</td>
+                  <td>Norte</td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                 <tr>
+                  <td>157</td>
+                  <td>Miramar</td>
+                  <td>Sur</td>
+                  <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td> 
+                </tr>
+              </tbody>
+            </table>
+
+
+
+          
+          <h3> Centrales  <i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="central">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Nombre </th>
+                  <th> Barrio </th>
+                  <th> Zona </th>
+                  <th> Descripción </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>1466</td>
+                  <td>Huawey CY56</td>
+                  <td>Ingenio</td>
+                  <td>Sur</td>
+                  <td>Lorem ipsum dolor sit amet. Cras et cursus nibh, vel aliquet risus.</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>1467</td>
+                  <td>Huawey CY58</td>
+                  <td>Ciudad Jardin</td>
+                  <td>Sur</td>
+                  <td>Donec vestibulum efficitur auctor.</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>1468</td>
+                  <td>Siemens XYAC</td>
+                  <td>Ciudadela</td>
+                  <td>Norte</td>
+                  <td></td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="7">
+                    <div class="ui right floated pagination menu">
+                      <a class="icon item" data-bind="click: setPrevAdminPage"><i class="left chevron icon"></i></a>
+                      <div class="pages item">1</div>
+                      <div class="pages item active">2</div>
+                      <div class="pages item">3</div>
+                      <a class="icon item" data-bind="click: setNextAdminPage"><i class="right chevron icon"></i></a>
+                    </div>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+
+            <h3>Tipos de numeros<i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="numberType">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> nombre </th>
+                  <th> Regex </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>154</td>
+                  <td>Repetitivo</td>
+                  <td>[0-9]*)\b[^>]*</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>155</td>
+                  <td>Cicilico</td>
+                  <td>{1,3}\.\d{1,3}\.\d{1,3}</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+            <h3>Tipos de clientes<i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="clientType">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> nombre </th>
+                  <th> Descripción </th>
+                  <th> Tipo de numero</th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>155</td>
+                  <td>Estación de taxi</td>
+                  <td></td>
+                  <td>Repetitivo</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>156</td>
+                  <td>Restaurante</td>
+                  <td></td>
+                  <td>Cicilico</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>157</td>
+                  <td>Entidad gubernamental</td>
+                  <td></td>
+                  <td>Repetitivo</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+            <h3> Numeros <i class="plus square outline icon"></i> </h3> 
+            <table class="admins ui celled table" id="number">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> Numero </th>
+                  <th> Central </th>
+                  <th> Tipo numero </th>
+                  <th> Facil de recordar </th>
+                  <th> Usado </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowAdminsAlert">
+                <tr>
+                  <td>154</td>
+                  <td>531645187</td>
+                  <td>Huawey CY58</td>
+                  <td></td>
+                  <td>No</td>
+                  <td>Si</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>155</td>
+                  <td>14444444</td>
+                  <td>Huawey CY58</td>
+                  <td>Restaurantes</td>
+                  <td>Si</td>
+                  <td>No</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+            </table>
+           
+
+            <h3> Clientes <i class="plus square outline icon"></i> </h3>
+            <table class="users ui celled table" id="client">
+              <thead>
+                <tr>
+                  <th> ID </th>
+                  <th> CC </th>
+                  <th> Nombres </th>
+                  <th> Apellidos </th>
+                  <th> Teléfono personal </th>
+                  <th> E-mail </th>
+                  <th> Dirección </th>
+                  <th> Acciones </th>
+                </tr>
+              </thead>
+              <tbody data-bind="visible: shouldShowUsersAlert">
+                <tr>
+                  <td>84272</td>
+                  <td>156682975958</td>
+                  <td>romain salvador</td>
+                  <td>edwards martinez</td>
+                  <td></td>
+                  <td>timeo.martinez@example.com</td>
+                  <td>9923 kirchplatz</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>778459</td>
+                  <td>26588768</td>
+                  <td>olivia danmark</td>
+                  <td>vesterborg mellow</td>
+                  <td>(896)-785-1602</td>
+                  <td>randall.bemelmans@example.com</td>
+                  <td>4192 mechelininkatu, paltamo</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>14794956</td>
+                  <td>83023636</td>
+                  <td>rosário redonda</td>
+                  <td>oliveira christiansen</td>
+                  <td></td>
+                  <td>christiansen@example.com</td>
+                  <td>9152 verkatehtaankatu, vehmaa</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+                <tr>
+                  <td>578459</td>
+                  <td>26588768</td>
+                  <td>bastian bader</td>
+                  <td>kitzingen kirchplatz</td>
+                  <td>0753-4060340</td>
+                  <td>bastian.bader@example.com</td>
+                  <td>5750 siilitie, lumparland</td>
+                   <td class="centered text"><i class="edit icon"></i> <i class="delete icon"></i></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="11">
+                    <div class="ui right floated pagination menu">
+                      <a class="icon item" data-bind="click: setPrevUserPage"><i class="left chevron icon"></i></a>
+                      <div class="pages item active">1</div>
+                      <div class="pages item">2</div>
+                      <div class="pages item">3</div>
+                      <div class="pages item">4</div>
+                      <div class="pages item">5</div>
+                      <div class="pages item">6</div>
+                      <div class="pages item">7</div>
+                      <a class="icon item" data-bind="click: setNextUserPage"><i class="right chevron icon"></i></a>
+                    </div>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+
+
+
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

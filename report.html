@@ -8,17 +8,24 @@
 <body>
 
   <!-- navbar -->
-  <div class="ui fixed inverted menu">
-    <div class="ui container">
-      <a href="#" class="header item">
-        CALITEL E.S.P
-      </a>
-    </div>
+  <div class="ui secondary pointing menu fixed">
+    <a class="item" id="register" href="index.html">
+    <i class="call icon"></i>
+      Solicitar
+    </a>
+    <a class="item active" href="report.html" id="report">
+      <i class="browser icon"></i>
+      Informe de asignación
+    </a>
+    <a class="item" href="settings.html">
+      <i class="settings icon"></i>
+      Configuración
+    </a>
   </div>
 
   <!-- main content -->
-  <div class="ui main text container">
-    <form class="ui form">
+  <div class="ui main text container segment">
+    <form class="ui form"> 
 
       <h2 class="ui dividing header center aligned">Reporte</h2>
 
@@ -40,13 +47,13 @@
 
     </form>
 
-  <table class="ui very basic collapsing celled table">
+  <table class="ui very basic collapsing celled table" style="display:none">
     <thead>
       <tr>
         <th>Solicitud</th>
         <th>Usuario</th>
         <th>Tipo de linea</th>
-        <th>fecha de asignación</th>
+        <th>Fecha de asignación</th>
         <th>Numero asignado</th>
       </tr>
     </thead>

@@ -7,22 +7,27 @@
 </head>
 <body>
   <!-- navbar -->
-  <div class="ui fixed inverted menu">
-    <div class="ui container">
-      <a href="#" class="header item">
-        CALITEL E.S.P
-      </a>
-    </div>
+  <div class="ui secondary pointing menu fixed">
+    <a class="item active" id="register" href="index.html">
+    <i class="call icon"></i>
+      Solicitar
+    </a>
+    <a class="item" href="report.html" id="report">
+      <i class="browser icon"></i>
+      Informe de asignación
+    </a>
+    <a class="item" href="settings.html">
+      <i class="settings icon"></i>
+      Configuración
+    </a>
   </div>
 
-
   <!-- main content -->
-  <div class="ui main text container">
-    <form class="ui form">
-      
+  <div class="ui  main text container segment">
+    <form class="ui form">      
       <h2 class="ui dividing header center aligned">Solicitar Linea</h2>
      
-      <div class="two fields">
+      <div class="three fields">
         <div class="field">
           <label>Identificación</label>
           <select class="ui search dropdown">
@@ -53,6 +58,25 @@
             </div>
           </div>
         </div>
+
+        <div class="field">
+          <label>Barrio</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">Barrio Abajo</div>
+            <div class="menu">
+              <div class="item" data-value="1">Ingenio</div>
+              <div class="item" data-value="2">Ciudad Jardin</div>
+              <div class="item" data-value="3">Miramar</div>
+              <div class="item" data-value="4">Nogales</div>
+              <div class="item" data-value="5">Ciudadela</div>
+              <div class="item" data-value="6">Prado</div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
       <div class="field">

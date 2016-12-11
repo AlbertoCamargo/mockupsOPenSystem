@@ -1,7 +1,37 @@
 .main.container {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .right {
 	text-align: right;
+}
+
+h2.ui.header {
+	padding-bottom: 15px !important;
+}
+
+.menu {
+	background: #7032e0 !important;
+}
+
+.active {
+	border-color: #fab223 !important;
+}
+
+.button {
+	background: #fab223 !important;
+	color: black !important;
+}
+
+.admin.content {
+    padding-top: 3.571428em;
+    width: 90%;
+}
+
+.ui.vertical.menu {
+	background: rgba(112, 50, 224, 0) !important;
+}
+
+.pagination {
+	background: #fab223 !important;
 }

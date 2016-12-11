@@ -13,7 +13,7 @@ function generateReport() {
 	data = "";
 	id = faker.random.number();
 	
-	name = faker.name.findName() + " " + faker.name.lastName() + " " + faker.name.lastName();
+	name = faker.name.findName() + " " + faker.name.lastName();
 	identification = faker.random.number() * 99999;
 	email = faker.internet.email()
 	address = faker.address.streetAddress()
@@ -30,10 +30,7 @@ function generateReport() {
 
 // ****** Index ***** //
 
-// Sidebar
-$(".header.item").click(function() {
- 	$(".ui.sidebar").sidebar('show');
-});
+
 
 // Dropdowns
 $('.selection.dropdown').dropdown();
@@ -58,6 +55,8 @@ $('#submit').click(function(evt) {
 
 // ****** Report ***** //
 
+//$('table').hide();
+
 $('#generate').click(function(evt) {
 	evt.preventDefault();
  	$(".ui.button").addClass('loading'); 
@@ -67,7 +66,7 @@ $('#generate').click(function(evt) {
 				data = generateReport();
 				$("tbody").append("<tr>" + data + "</tr>");
 		}
-	
+		$('table').show();
 		$(".ui.button").removeClass('loading');
 	}, 1000);
 });
