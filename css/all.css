@@ -10,17 +10,21 @@ h2.ui.header {
 	padding-bottom: 15px !important;
 }
 
-.menu {
+.menu.fixed {
 	background: #7032e0 !important;
+	/*color: white !important;*/
+	/*background: #36d3cc !important; */
 }
 
 .active {
 	border-color: #fab223 !important;
+	/* border-color: #000000 !important; */ 
 }
 
 .button {
 	background: #fab223 !important;
-	color: black !important;
+	/*background: #bbbbbb !important; */
+	color: #a7791e !important;
 }
 
 .admin.content {
@@ -34,4 +38,11 @@ h2.ui.header {
 
 .pagination {
 	background: #fab223 !important;
+}
+a {
+	color: black !important;
+}
+
+.menu.fixed .item {
+	color: white !important;
 }
